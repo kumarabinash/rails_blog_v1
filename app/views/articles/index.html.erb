@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog v 1</title>
+</head>
+<body>
+<h3>Welcome to my blog.</h3>
+<h3>Please find all my blog posts here.</h3>
+
+<ul id="articles">
+	<% @articles.each do |article| %>
+		<li>
+			<%= article.title %><br />
+			<%= article.body %><br />
+		</li>
+	<% end %>
+</ul>
+</body>
+</html>
